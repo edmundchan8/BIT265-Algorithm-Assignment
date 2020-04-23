@@ -7,6 +7,16 @@
 
 <form action="">
     <label for="word">Enter a word here</label><br>
-    <input type="text" id="word" name="word" value="Enter anything"><br>
+    <input type="text" id="inputText" name="word" value="Enter anything"><br>
     <input type="submit" value="Submit">
 </form> 
+
+<script>
+
+    //When input text clicked into, text within it vanishes.
+    document.getElementById("inputText").onclick = function () { ClearText() };
+    function ClearText()
+    {
+        document.getElementById("inputText").value = "";
+    }
+</script>
